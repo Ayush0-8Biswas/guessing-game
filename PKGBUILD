@@ -19,6 +19,6 @@ build() {
 
 package() {
 	cd guessing-game
-	mkdir -p ${pkgdir}/usr/local/bin/${pkgname}
-	cp -rf guessing-game.py ${pkgdir}/usr/local/bin/${pkgname}/guessing-game
+	cp guessing-game.py ${pkgdir}/usr/local/bin/guessing-game
+	chmod +x ${pkgdir}/usr/local/bin/guessing-game
 }
