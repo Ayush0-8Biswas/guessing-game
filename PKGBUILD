@@ -14,7 +14,6 @@ md5sums=('SKIP')
 
 build() {
 	cd guessing-game
-	python3 -m py_compile guessing-game.py
 }
 
 package() {
