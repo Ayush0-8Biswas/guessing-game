@@ -18,6 +18,7 @@ build() {
 }
 
 package() {
-	mkdir -p ${pkgdir}/opt/${pkgname}
-	cp -rf * ${pkgdir}/opt/${pkgname}
+	cd guessing-game
+	mkdir -p ${pkgdir}/usr/local/bin/${pkgname}
+	cp -rf * ${pkgdir}/usr/local/bin/${pkgname}
 }
